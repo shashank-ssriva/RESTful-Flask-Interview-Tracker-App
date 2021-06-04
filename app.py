@@ -1,4 +1,5 @@
 from flask import Flask
+import os
 from flask_restful import Api, Resource, reqparse
 import pandas as pd
 
@@ -48,4 +49,4 @@ class Interviews(Resource):
 # Add URL endpoints
 api.add_resource(Interviews, '/interviews')
 if __name__ == '__main__':
-    app.run(port=5004, debug=True)
+    app.run(host='0.0.0.0', port=int(os.getenv('PORT', 5002)))
