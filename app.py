@@ -7,7 +7,7 @@ api = Api(app)
 
 class Interviews(Resource):
     def get(self):
-        data = pd.read_csv('Interviews-For-Xebia.csv')
+        data = pd.read_csv('Interviews.csv')
         data = data.to_dict('records')
         return {'data' : data}, 200
 
