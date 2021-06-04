@@ -5,4 +5,4 @@ This app exposes the interview data read from a CSV file as an API.
 
 # Live app
 
-The live app can be accessed [here](https://my-interviews.herokuapp.com/interviews)
+The live app can be accessed [here](https://my-interviews.herokuapp.com/interviews).
